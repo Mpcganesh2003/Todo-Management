@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚀 Todo Manager</h1>
+
+    <div class="form">
+        <input type="text" id="title" placeholder="Enter Title">
+        <input type="text" id="description" placeholder="Enter Description">
+        <input type="email" id="email" placeholder="Enter Email">
+        <button onclick="addTodo()">➕ Add</button>
+    </div>
+
+    <h2>Your Tasks</h2>
+    <div id="todoList" class="todo-container"></div>
+
+    <div id="editModal" class="modal">
+    <div class="modal-content">
+        <h2>Edit Todo</h2>
+
+        <input type="hidden" id="editId">
+        <input type="text" id="editTitle" placeholder="Title">
+        <input type="text" id="editDescription" placeholder="Description">
+        <input type="email" id="editEmail" placeholder="Email">
+
+        <button onclick="updateTodo()">💾 Save</button>
+        <button onclick="closeModal()">❌ Cancel</button>
+    </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
